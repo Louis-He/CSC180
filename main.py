@@ -32,16 +32,26 @@ for i in range(1,nargs):
    else:
       skip=False
 
-print "INFO: FIN",FIN
-print "INFO: FOUT",FOUT
-#1,1,2,3,5,8
+print "INFO: FIN", FIN
+print "INFO: FOUT", FOUT
+print "INFO: COL",COL
+print "INFO: DIR",DIR
+
 
 try:
-    f= open(FIN, 'r')
+    f = open(FIN, 'r')
     lines = f.readlines()
-    for line in lines:
-        print line.split('\n')[0]
     f.close()
+    accum = []
+    for i in lines:
+        j = i.split('\n')[0]
+        k=j.split(',')
+        r=[]
+        for x in k:
+            r = r +[int(x)]
+        accum = accum + [r]
+    print accum
+
     try:
         g = open('dataout', 'w')
         g.write('This is content\n')
