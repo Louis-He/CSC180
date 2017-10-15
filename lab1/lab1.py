@@ -3,12 +3,12 @@ def summl(n):
     Neg=True
     for i in range(1,n+1):
         if Neg:
-          r=r-i
-          Neg=False
+            r=r-i
+            Neg=False
         else:
-          r=r+i
-          Neg=True
-     return r
+            r=r+i
+            Neg=True
+    return r
 
 
 def mult(A,B):
@@ -17,9 +17,3 @@ def mult(A,B):
      r=r*A
      i=i+1
    return r
-
-def isprime(x):
-   r=True
-   for i in range(2,x):
-     if (x%i=True):
-        
