@@ -2,7 +2,8 @@ from random import randint
 
 class ttt:
 
-    T = [0,0,0,0,0,0,0,0,0]
+    def __init__(self):
+        self.T = [0,0,0,0,0,0,0,0,0]
 
     def convBoardStateToStr(self, x, pos):
        if x==1:
