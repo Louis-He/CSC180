@@ -7,3 +7,5 @@ script:
  - python lab2/lab2.py
  - python lab3/redfibo.py
  - python lab4/tttlib.py
+ - python lab5/counterTester.py
+ - python lab6/seqtest.py
