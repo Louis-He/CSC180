@@ -9,3 +9,5 @@ script:
  - python lab4/tttlib.py
  - python lab5/counterTester.py
  - python lab6/seqtester.py
+ - python lab7/ge.py
+ - python lab7/sort.py
